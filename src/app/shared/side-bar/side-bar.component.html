@@ -1,0 +1,50 @@
+<!-- Container for sidebar(s) + page content -->
+<ng-sidebar-container>
+
+  <!-- A sidebar -->
+  <ng-sidebar [(opened)]="opened" [closeOnClickOutside]="true" [showBackdrop]="true" >
+
+    <nav>
+      <label> Curriculum </label>
+      <button class="aboutme" [routerLink]="['']" routerLinkActive='active' >About Me</button>
+      <button class="formation" [routerLink]="['Formation']" routerLinkActive="active" > Formation </button>
+
+
+
+      <footer>
+        <a class = "github" href="https://github.com/MateusDestroy">
+          <img src="../../../assets/image/placa-do-github.png" alt="" srcset="">
+        </a>
+
+
+
+
+        <a class="linkedin" href="https://www.linkedin.com/in/mateusemacedo">
+          <img src="../../../assets/image/logotipo-do-linkedin (2).png" alt="" srcset="">
+        </a>
+
+    </footer>
+
+    </nav>
+
+
+
+
+  </ng-sidebar>
+
+  <!-- Page content -->
+  <div ng-sidebar-content>
+    <div class="side" (click)="toggleSidebar()">
+      <div class="linha"></div>
+      <div class="linha"></div>
+      <div class="linha"></div>
+    </div>
+
+
+    <router-outlet> </router-outlet>
+
+
+
+  </div>
+
+</ng-sidebar-container>

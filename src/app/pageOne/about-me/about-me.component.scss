@@ -1,0 +1,41 @@
+
+
+
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img
+{
+  height: 15em;
+  width: 10em;
+  border-radius: 100px;
+}
+
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 4em;
+}
+
+
+.name {
+  margin-bottom: 3em;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+
+  margin-left: 2em;
+  margin-right: 2em;
+}
